@@ -9,7 +9,6 @@ import Answer from "./components/Answer";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
   useNavigate,
 } from "react-router-dom";
 import React from "react";
