@@ -1,0 +1,138 @@
+.navbar{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+
+}
+.question__container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+.question p{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 50px;
+
+}
+
+.question h1{
+    font-size: 2rem;
+    background-color: #DA1212;
+    color: white;
+    padding: 1.5rem;
+    margin: 0 auto;
+    border-radius: 50px;
+    width: min-content;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(30px);
+}
+.col:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.question h1:last-child{
+    transform: translateY(-30px);
+    background-color: #11468F;
+    color: white;
+    cursor: pointer;
+}
+
+.question{
+ position: relative;
+    height: 100%;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.modal  .content{
+    position: relative;
+    background-color: #EEEEEE;
+    width: 60%;
+    border-radius: 50px  ;
+    padding: 2rem;
+    height:min-content ;
+}
+.content p {
+    background-color: inherit;
+}
+.cta{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+.cta-btn{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    cursor: pointer;
+}
+.answer-container .avatar{
+    position: absolute;
+    top: -120px;
+    background-color: #EEEEEE;
+    border: 5px solid #11468F;
+    padding: 1rem;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cta-btn span{
+    display: block;
+    min-width: 25px;
+    min-height: 25px;
+    border-radius: 50%;
+    background-color: #DA1212;
+}
+.answer-container{
+    height: 100%;
+    position: relative;
+}
+.answer-container button{
+position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #11468F;
+    color: white;
+    font-size: 20px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.links h2{
+    text-align: center;
+    font-size: 2rem;
+
+}
+.links .content{
+    margin: 2rem 0;
+
+}
+.navbar{
+    cursor: pointer;
+}
+.links .content a{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #11468F;
+    text-decoration: none;
+    margin: 1rem 0;
+}

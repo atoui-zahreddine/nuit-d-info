@@ -1,0 +1,53 @@
+.title{
+    color:#11468F;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.content-sign-up{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.signup-container .form-sign-up{
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.signup-container label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #11468F;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+.signup-container input{
+    padding: 1rem;
+    border:none;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    outline: none;
+    width: 50%;
+}
+a{
+    color: #11468F;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:visited{
+    color: #11468F;
+}
+
+.cta-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+}

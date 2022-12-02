@@ -1,0 +1,32 @@
+.progress-bar{
+    display: flex;
+    align-items:center;
+    gap:2rem;
+}
+.progress-bar__container{
+    display: flex;
+    width: 60%;
+    height: 40px;
+    position: relative;
+    background: #DA1212;
+    border-radius: 50px;
+}
+.progress-bar__title{
+    opacity: 0.8;
+    font-size: 2rem;
+    color: #DA1212;
+}
+.progress-bar__progress{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background: #11468F;
+    border-radius: 50px;
+}
+.levels{
+    padding: 0.5rem 1rem;
+}
+.levels img{
+    aspect-ratio: 16/10;
+    transform: translateX(-15px);
+}
