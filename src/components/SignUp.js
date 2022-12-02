@@ -1,14 +1,19 @@
 import React from "react";
 import "./signup.css";
 import Logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUp(props) {
+  const navigate = useNavigate();
+  const submitHandler = (e) => {
+    e.preventDefault();
+    navigate("/levels");
+  };
   return (
     <>
       <h1 className="title">Connexion</h1>
       <div className="content-sign-up">
-        <form className="form-sign-up">
+        <form onSubmit={submitHandler} className="form-sign-up">
           <label htmlFor="username">Nom de l'utilisateur</label>
           <input
             required
@@ -26,7 +31,11 @@ function SignUp(props) {
             placeholder="Mot de passe"
           />
           <a href="#">Mot de passe oublié ?</a>
-          <button className="sign-up-btn" type="submit">
+          <button
+            style={{ cursor: "pointer" }}
+            className="sign-up-btn"
+            type="submit"
+          >
             Se connecter
           </button>
           <Link to="/signup">Je crée mon compte</Link>
